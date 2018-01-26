@@ -11,3 +11,17 @@ body {
     float: right;
     text-align: center;
 }
+
+.snow-pictures {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.snow-pictures img {
+	margin: 0;
+	width: 50%;
+	height: 50%;
+}
+
