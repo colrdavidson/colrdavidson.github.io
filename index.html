@@ -76,49 +76,55 @@
 			<h2>Selected Projects</h2>
             <table >
                 <tr>
-                    <td width="12.5%">
+                    <td width="11.1%">
                         <a href="#siege">
                             <img src="siege_logo.png" alt="Siege Technologies" width="50%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
                         Siege
                         </a>
                     </td>
-                    <td width="12.5%">
+                    <td width="11.1%">
                         <a href="#rust">
                             <img src="rust.png" alt="Rust" width="50%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
                     	Rust
                         </a>
                     </td>
-                    <td width="12.5%">
+                    <td width="11.1%">
                         <a href="#first">
                             <img src="first_logo.jpg" alt="FIRST Robotics" width="50%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
                         FIRST
                         </a>
                     </td>
-                    <td width="12.5%">
+                    <td width="11.1%">
                         <a href="#Q8">
                             <img src="tile.png" alt="Q8" width="55%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
                         Q8
                         </a>
                     </td>
-                    <td width="12.5%">
+                    <td width="11.1%">
                         <a href="#emu">
                             <img src="pkmn_yellow.png" alt="GB Emu" width="50%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
                         GB Emu
                         </a>
                     </td>
-                    <td width="12.5%">
+                    <td width="11.1%">
+                        <a href="#kern">
+                            <img src="nolli.png" alt="Nolli" width="45%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+                        Nolli
+                        </a>
+                    </td>
+                    <td width="11.1%">
                         <a href="#zala">
                             <img src="zala_term.png" alt="Zala" width="50%" height="auto" style="overflow:hidden; display: block; margin-left: auto; margin-right: auto;">
                         Zala
                         </a>
                     </td>
-                    <td width="12.5%">
+                    <td width="11.1%">
                         <a href="#snow">
                             <img src="snow_cube.jpg" alt="Snow" width="55%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
                         Snow
                         </a>
                     </td>
-                    <td width="12.5%">
+                    <td width="11.1%">
                         <a href="#rain">
                             <img src="cube.png" alt="Rain" width="55%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
                         Rain
@@ -292,7 +298,7 @@
 				<li> Readable program dissasembly </li>
 				<li> Interactive debugging system </li>
 			</ul>
-		<a href="https://github.com/anchovieshat/gb_emu" style="color: #5c968a;">GB Emu Github</a>
+			<a href="https://github.com/anchovieshat/gb_emu" style="color: #5c968a;">GB Emu Github</a>
 		</div>
 		<br>
         <p>GB Emu is a long-term emulation project of the classic Nintendo Gameboy. The Gameboy has a Z80 CPU,
@@ -310,6 +316,39 @@
 		a binary, line by line, for critical points and speed through segments that I had already verified.</p>
     </div>
     </section>
+
+	<section id="kern" class="nolli-section">
+	<div class="container">
+		<div class="siege" style="padding-left: 0em; padding-bottom: 0em;">
+			<h1 style="text-align: left">
+				<img src="nolli.png" alt="Nolli" style="display: inline-block; height: 1em; position: relative; bottom: 0.125em">
+				Nolli
+			</h1>
+		</div>
+		<div style="background-color: #bcf6ea; padding: 1em">
+			<h4>Hobby Kernel</h4>
+			<ul>
+				<li> x86 homebrew kernel </li>
+				<li> Custom bootloader </li>
+				<li> Identity Mapped Paging </li>
+			</ul>
+			<a href="https://github.com/anchovieshat/nolli_os" style="color: $5c968a;">Nolli Github</a>
+		</div>
+		<br>
+		<p>Nolli is a tiny hobby kernel that runs on x86. It has a two stage bootloader that pulls
+		it from the primordial 16 bit start state up to a slightly less archaic 32 bits, heroically
+		saving the poor processor from the horrors of the segment registers.</p>
+		<img src="nolli.png" class="thumbnail" alt="PCI List" width="75%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+		<p>As a learning project
+		primarily, the kernel regularly suffers bouts of triple fault fever, getting better
+		over time as I work out some of the nasty issues. It currently supports basic interrupts
+		and catches some faults; It responds to keyboard input, page faults appropriately on invalid
+		accesses, and can scan the pci bus for attached devices. Nolli can output over both serial
+		and vga, using the BIOS configured VGA mmio at 0xB8000 to draw ascii symbols in various colors.</p>
+		<p>The bootloader is simple, using bios int calls to build a map of memory, load the kernel
+		from disk, configure the gdt, and transition into 32 bit mode.</p>
+	</div>
+	</section>
 
     <section id="zala" class="zala-section">
     <div class="container">
