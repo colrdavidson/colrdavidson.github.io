@@ -58,6 +58,7 @@ body {
 	height: 1em;
 	position: relative;
 	bottom: 0.125em;
+	margin-right: 0.25em;
 }
 
 .container > .sub-link {
