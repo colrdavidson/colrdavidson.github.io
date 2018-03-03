@@ -1,0 +1,122 @@
+body {
+    padding-top: 50px;
+}
+
+.image {
+    float: right;
+    text-align: center;
+}
+
+.snow-pictures {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.snow-pictures img {
+	margin: 0;
+	width: 50%;
+	height: 50%;
+}
+
+.mugshot-header {
+	display: flex;
+	flex-direction: column;
+
+	padding-left: 15px;
+	padding-right: 15px;
+    text-align: center;
+}
+
+.mugshot-header > h3 {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+
+.section-header {
+    padding: 40px 15px;
+    text-align: center;
+	padding-left: 0em;
+	padding-bottom: 0em;
+	padding-top: 2em;
+}
+
+.section-header > h1 {
+	text-align: left;
+}
+
+.section-header > h1 > img {
+	display: inline-block;
+	height: 1em;
+	position: relative;
+	bottom: 0.125em;
+}
+
+.container > .sub-link {
+	color: #606060;
+}
+
+.container > .sub-header {
+	display: flex;
+	flex-direction: column;
+
+	border: solid 2px #8ff0dc;
+	background-color: #bcf6ea;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+.container > .sub-header > h4 {
+	margin-top: 0;
+}
+
+.header-box {
+	display: flex;
+	flex-direction: column;
+}
+
+.mugshot-box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+.mugshot-box > .mugshot-img {
+	height: 15em;
+	margin-bottom: 0em;
+}
+
+.skills-summary {
+	border-top: solid 1px #999;
+	border-bottom: solid 1px #999;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.skills-summary > .header {
+	text-align: left;
+	margin-top: 0em;
+}
+
+.skills-summary > .skills-list {
+	text-align: left;
+	clear: both;
+	margin-bottom: 0;
+}
+
+.octocat-link {
+	height: 1em;
+}
+
+.link-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.link-row > a > img {
+	height: 5em;
+	width: auto;
+}

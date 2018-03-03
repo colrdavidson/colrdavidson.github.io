@@ -17,9 +17,10 @@
     <link href="ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <link href="scrolling-nav.css" rel="stylesheet">
     <link href="https://bootswatch.com/flatly/bootstrap.min.css" rel="stylesheet">
+
 	<script src="portfolio.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -48,162 +49,102 @@
     </nav>
 
     <section id="about" class="about-section">
-        <div class="container" padding-bottom="4em">
-            <img src="person.jpg" class="thumbnail" width="30%" height="auto" style="display: block; float: right">
-          	<div class="siege" style="float: left; width:60%">
-            	<h3>Colin Davidson &mdash; Systems and Backend Programmer</h3>
-				<a id="emaila"></a>
-				<br>
-				<a href="https://github.com/anchovieshat">
-					<img src="octocat.png" width="5%" height="100%" style="display: inline-block;">
-					&nbsp;Github Portfolio
-				</a>
-				<br>
-				<a href="resume.pdf">Resume</a>
-		  	</div>
-            <p style="text-align: left; clear: both">I'm Colin Davidson, and I'm looking for
-            a job as a programmer. I have experience with building full
-            backend systems, creating simple web UIs, and working directly with
-            low-level hardware. I'd love to work on any of those, or anything
-            in between. I'm currently in Seattle, but I'm willing to move.</p>
-			<div style="border-top: solid 1px #999; border-bottom: solid 1px #999; padding-top: 1em; padding-bottom: 1em;">
-				<h4 style="text-align: left; margin-top: 0em;">Skill Summary</h4>
-				<ul style="text-align: left; clear: both; margin-bottom: 0em">
-					<li>production experience in Python, Rust, C, and JS</li>
-					<li>low level programming, web backend, robotics, emulation</li>
+        <div class="container header-box">
+			<div class="mugshot-box">
+				<div class="mugshot-header">
+					<h3>Colin Davidson</h3>
+					<h3>Full-Stack and Systems Software Engineer</h3>
+					<a id="emaila"></a>
+					<a href="https://github.com/anchovieshat">
+						<img src="octocat.png" alt="github-link" class="octocat-link">
+						&nbsp;Github Portfolio
+					</a>
+				</div>
+				<img src="person.jpg" alt="mugshot" class="thumbnail mugshot-img">
+			</div>
+			<div class="skills-summary">
+				<h4 class="header">Skill Summary</h4>
+				<ul class="skills-list">
+					<li>production experience with Python, Rust, C, and JS</li>
+					<li>full-stack; frontend to backend to kernel</li>
 				</ul>
 			</div>
-			<h2>Selected Projects</h2>
-            <table >
-                <tr>
-                    <td width="11.1%">
-                        <a href="#siege">
-                            <img src="siege_logo.png" alt="Siege Technologies" width="50%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
-                        Siege
-                        </a>
-                    </td>
-                    <td width="11.1%">
-                        <a href="#rust">
-                            <img src="rust.png" alt="Rust" width="50%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
-                    	Rust
-                        </a>
-                    </td>
-                    <td width="11.1%">
-                        <a href="#first">
-                            <img src="first_logo.jpg" alt="FIRST Robotics" width="50%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
-                        FIRST
-                        </a>
-                    </td>
-                    <td width="11.1%">
-                        <a href="#Q8">
-                            <img src="tile.png" alt="Q8" width="55%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
-                        Q8
-                        </a>
-                    </td>
-                    <td width="11.1%">
-                        <a href="#emu">
-                            <img src="pkmn_yellow.png" alt="GB Emu" width="50%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
-                        GB Emu
-                        </a>
-                    </td>
-                    <td width="11.1%">
-                        <a href="#kern">
-                            <img src="nolli.png" alt="Nolli" width="45%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
-                        Nolli
-                        </a>
-                    </td>
-                    <td width="11.1%">
-                        <a href="#zala">
-                            <img src="zala_term.png" alt="Zala" width="50%" height="auto" style="overflow:hidden; display: block; margin-left: auto; margin-right: auto;">
-                        Zala
-                        </a>
-                    </td>
-                    <td width="11.1%">
-                        <a href="#snow">
-                            <img src="snow_cube.jpg" alt="Snow" width="55%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
-                        Snow
-                        </a>
-                    </td>
-                    <td width="11.1%">
-                        <a href="#rain">
-                            <img src="cube.png" alt="Rain" width="55%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
-                        Rain
-                        </a>
-                    </td>
-                </tr>
-            </table>
+			<h2>Spotlight Projects</h2>
+			<div class="link-row">
+				<a href="#Q8">
+					<img src="tile.png" alt="Q8">Q8
+				</a>
+				<a href="#rust">
+					<img src="rust.png" alt="Rust">Rust
+				</a>
+				<a href="#kern">
+					<img src="nolli.png" alt="Nolli">Nolli
+				</a>
+				<a href="#rain">
+					<img src="cube.png" alt="Rain">Rain
+				</a>
+				<a href="#zala">
+					<img src="zala_term.png" alt="Zala">Zala
+				</a>
+				<a href="#snow">
+					<img src="snow_cube.jpg" alt="Snow">Snow
+				</a>
+			</div>
         </div>
     </section>
 
-    <section id="siege" class="siege-section">
-        <div class="container">
-            <div class="siege" style="padding-left: 0em; padding-bottom: 0em;">
-				<h1 style="text-align: left">
-					<img src="siege_logo.png" alt="Siege Technologies" style="display: inline-block; height: 1em; position: relative; bottom: 0.125em">
-					Siege Technologies
-				</h1>
-            </div>
+    <section id="Q8">
+    <div class="container">
+        <div class="section-header">
+            <h1>
+				<img src="tile.png" alt="Quine8">
+				Quine8 (Q8)
+			</h1>
+        </div>
 
-        <div style="background-color: #bcf6ea; padding: 1em">
-			<h4>Linux Kernel Module Toolchain</h4>
-        <ul>
-            <li> custom Linux kernel module </li>
-            <li> clear, concise UI to enable users to interact with data </li>
-            <li> Rust webserver to seperate platform-independant data processing from UI </li>
-            <li> performance impact: workflow took nearly 24 hours, now done under 10 sec. </li>
-        </ul>
-		</p>
+        <div class="sub-header">
+			<h4>Interactive Bytecode VM</h4>
+			<ul>
+				<li> complete program runtime visualization </li>
+				<li> visual data processing overlay </li>
+				<li> full system documentation </li>
+			</ul>
+
+			<a href="https://anchovieshat.github.io/Q8/index.html" class="sub-link">Q8 Live</a>
+			<a href="https://github.com/anchovieshat/Q8" class="sub-link">Q8 Github</a>
 		</div>
-		<br>
 
-            <p>I worked as part of a 2 person team implementing a custom Linux kernel module for a
-            cybersecurity application in 3 months. I wrote a mini data visualization server and
-			web client in Rust and Javascript, and the core application in Python and C, learning
-			professional software development practices. This
-            experience has prepared me well to approach other complex systems
-            in many domains.</p>
-
-        <pre><code>
-	// basic structure of a Linux kernel module
-
-        #include &lt;linux/module.h&gt;
-        #include &lt;linux/kernel.h&gt;
-
-        int init_module(void) {
-            printk(KERN_INFO "Hello world!\n");
-            return 0;
-        }
-
-        void cleanup_module(void) {
-            printk(KERN_INFO "Goodbye world!\n");
-        }
-        </code></pre>
-            <p>Over the course of my internship, I designed and shipped a user-facing feature
-            in Siege's product, reducing deployment time for the application from nearly 24 hours
-            to under 10 seconds by simplifying the user workflow and pulling out unnecessary
-			setup dependencies. In addition to meeting hard security constraints, primarily through
-            code review, I also had to support multiple hardware architectures and provide
-            backwards compatibility for older Linux kernel versions.</p>
-        </div>
+		<p>Q8 is an educational tool, designed to show the users a simplified view of what really
+		goes on under the hood of their computer. Using a grid of tiles, it renders the state of
+		the program in memory live, highlighting I/O operations as they occur. With a comprehensive
+		suite of example programs, puzzles, and intro tutorials, users can quickly get a feel for
+		working with a machine on one of the lowest levels, bytecode. Without the abstractions of
+		higher-level languages or even assembly, it provides an interface to make low-level computing
+		building blocks tractable.</p>
+		<img src="mult.gif" class="thumbnail" alt="Multiplication Program" width="60%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+		<p>Q8 provides only the most basic of operations, giving new users lots of runway to grow.
+		Need multiplication? Discover the joys of writing it yourself using addition and a loop,
+		and learn a lot about programming as you go.</p>
+    </div>
     </section>
 
-	<section id="rust" class="rust-section">
+	<section id="rust">
 		<div class="container">
-            <div class="siege" style="padding-left: 0em; padding-bottom: 0em;">
-				<h1 style="text-align: left">
-                    <img src="rust.png" alt="Rust" style="display: inline-block; height: 1em; position: relative; bottom: 0.125em">
+            <div class="section-header">
+				<h1>
+                    <img src="rust.png" alt="Rust">
 					Rust Contributions
 				</h1>
 			</div>
-        <div style="background-color: #bcf6ea; padding: 1em">
-			<h4>Rust Commits</h4>
-			<ul>
-				<li> made small accepted commits to major open source project </li>
-				<li> identified issues that I could tackle and collaborate with an open source team </li>
-				<li> learned github-based issue/fork/PR/review-based development workflow </li>
-			</ul>
-		</div>
-		<br>
+			<div class="sub-header">
+				<h4>Rust Commits</h4>
+				<ul>
+					<li> made small accepted commits to major open source project </li>
+					<li> identified issues that I could tackle and collaborate with an open source team </li>
+					<li> learned github-based issue/fork/PR/review-based development workflow </li>
+				</ul>
+			</div>
+
 			<p>I have been learning Rust and using it in a variety of my own projects. Along the way, I've added minor features to
 			improve my own project development experience, submitting accepted upstream commits along the way.</p>
         	<img src="rust_patch.png" class="thumbnail" width="90%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
@@ -215,126 +156,27 @@
 			<p>While working on some basic crypto programming challenges, I discovered that the Rust biguint library didn't have
 			any code for printing biguints in hex. As part of my validation and testing process for the project, I added that
 			feature in my own personal fork, eventually submitting it after approval by the rust-num dev team.</p>
+		</div>
 	</section>
 
-    <section id="first" class="first-section">
-        <div class="container">
-            <div class="siege" style="padding-left: 0em; padding-bottom: 0em;">
-                <h1 style="text-align: left">
-                    <img src="first_logo.jpg" alt="FIRST Robotics" style="display: inline-block; height: 1em; position: relative; bottom: 0.125em">
-					FIRST Robotics
-				</h1>
-            </div>
-        <div style="background-color: #bcf6ea; padding: 1em">
-			<h4>Any-Direction Drive System</h4>
-            <ul>
-				<li> used low level protocols like i2c and SPI </li>
-				<li> implemented PID control loops </li>
-                <li> worked on robot chassis with omnidirectional motion and rotation </li>
-				<li> experienced and addressed the challenges of real hardware behaviour </li>
-            </ul>
-			</div>
-			<br>
-            <p>From 2012-2014, I participated in FIRST Robotics, working to solve challenging problems
-            with my team. I built a platform that could drive in any ordinal direction while simultaneously
-            rotating by communicating with a 9 degrees-of-freedom compass/accelerometer/gyro package over i2c.</p>
-            <img src="omni_drive.jpg" class="thumbnail" alt="Chassis View" width="62%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
-			<p>The chassis supported both field-relative and robot-relative driving schemes, allowing you to push
-            forward on the control stick, moving the robot away from you, or to push forward, and drive in the
-            direction of the robot's front.</p>
-            <img src="field_shot_omni.jpg" class="thumbnail" alt="Field View" width="62%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
-            <p>I implemented a PID control loop to improve motion accuracy. PID requires tuning, and can cause
-			funny behavior when it's poorly calibrated. The robot had an oscillation problem for quite a
-			while as a result of the poor tuning, making aiming with the balance ball launcher a nightmare.
-            We did eventually get the tuning right. Properly corrected, it went on to win regionals.</p>
-        </div>
-    </section>
-
-    <section id="Q8" class="Q8-section">
-    <div class="container">
-        <div class="siege" style="padding-left: 0em; padding-bottom: 0em;">
-            <h1 style="text-align: left">
-				<img src="tile.png" alt="Quine8" style="display: inline-block; height: 1em; position: relative; bottom: 0.125em">
-				Quine8 (Q8)
-			</h1>
-        </div>
-
-        <div style="background-color: #bcf6ea; padding: 1em">
-			<h4>Interactive Bytecode VM</h4>
-        <ul>
-            <li> complete program runtime visualization </li>
-            <li> visual data processing overlay </li>
-            <li> full system documentation </li>
-        </ul>
-		<a href="https://github.com/anchovieshat/Q8" style="color: #606060;">Q8 Github</a><br>
-		<a href="https://anchovieshat.github.io/Q8/index.html" style="color: #606060;">Q8 Live</a>
-		</div>
-		<br>
-		<p>Q8 is an educational tool, designed to show the users what really goes on under the hood of
-		their computer. Using a grid of tiles, it renders the state of the program in memory live,
-		highlighting I/O operations as they occur. With a comprehensive suite of example programs, puzzles,
-		and intro tutorials, users can quickly get a feel for working with a machine on the lowest
-		level, bytecode. Without the abstractions of higher-level languages or even assembly, it
-		provides a framework to make comprehension of low-level computing building blocks, easy.</p>
-		<img src="mult.gif" class="thumbnail" alt="Multiplication Program" width="60%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
-		<p>Q8 provides only the most basic of operations, giving new users lots of runway to grow.
-		Need multiplication? Write it yourself using addition and a loop, and learn a lot about
-		programming while you are at it.</p>
-    </div>
-    </section>
-
-    <section id="emu" class="emu-section">
-    <div class="container">
-        <div class="siege" style="padding-left: 0em; padding-bottom: 0em;">
-            <h1 style="text-align: left">
-				<img src="pkmn_yellow.png" alt="GB Emu" style="display: inline-block; height: 1em; position: relative; bottom: 0.125em">
-				GB Emu
-			</h1>
-        </div>
-        <div style="background-color: #bcf6ea; padding: 1em">
-			<h4>Gameboy Emulator</h4>
-			<ul>
-				<li> Z80 emulation </li>
-				<li> Readable program dissasembly </li>
-				<li> Interactive debugging system </li>
-			</ul>
-			<a href="https://github.com/anchovieshat/gb_emu" style="color: #5c968a;">GB Emu Github</a>
-		</div>
-		<br>
-        <p>GB Emu is a long-term emulation project of the classic Nintendo Gameboy. The Gameboy has a Z80 CPU,
-        a 160x140 LCD, and swappable memory banks built into the cartridge. Because the opcodes are not fixed
-        width, and the program in memory can self-modify and swap addresses via the bank system, building a
-        stable debugger and disassembler was absolutely essential. </p>
-        <img src="debug_screen.png" class="thumbnail" alt="Pokemon Yellow" width="90%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
-        <p>The gameboy emulates a CRT using a timer count to render "scanlines" and providing emulated vblank interrupts.
-        Because it doesn't have enough memory to map VRAM to local space, it has to use a tiling system, reducing
-        the amount of memory that the hardware needs mapped at any one time significantly. To access the next tile
-        for editing, the ROM writes a couple bits to address FF40 in the high memory mapped region.</p>
-		<p>To properly debug the emulator, I wrote a disassembler that does pretty printing of opcodes,
-		enabling me to walk through the binary step by step and verify against other stable debuggers that my
-		emulation was running correctly. I added support for arbitrary speed manipulation to let me step through
-		a binary, line by line, for critical points and speed through segments that I had already verified.</p>
-    </div>
-    </section>
-
-	<section id="kern" class="nolli-section">
+	<section id="kern">
 	<div class="container">
-		<div class="siege" style="padding-left: 0em; padding-bottom: 0em;">
-			<h1 style="text-align: left">
-				<img src="nolli.png" alt="Nolli" style="display: inline-block; height: 1em; position: relative; bottom: 0.125em">
+		<div class="section-header">
+			<h1>
+				<img src="nolli.png" alt="Nolli">
 				Nolli
 			</h1>
 		</div>
-		<div style="background-color: #bcf6ea; padding: 1em">
+		<div class="sub-header">
 			<h4>Hobby Kernel</h4>
 			<ul>
 				<li> x86 homebrew kernel </li>
 				<li> Custom bootloader </li>
 				<li> Identity Mapped Paging </li>
 			</ul>
-			<a href="https://github.com/anchovieshat/nolli_os" style="color: $5c968a;">Nolli Github</a>
+			<a href="https://github.com/anchovieshat/nolli_os" class="sub-link">Nolli Github</a>
 		</div>
-		<br>
+
 		<p>Nolli is a tiny hobby kernel that runs on x86. It has a two stage bootloader that pulls
 		it from the primordial 16 bit start state up to a slightly less archaic 32 bits, heroically
 		saving the poor processor from the horrors of the segment registers.</p>
@@ -350,26 +192,55 @@
 	</div>
 	</section>
 
-    <section id="zala" class="zala-section">
+    <section id="rain">
     <div class="container">
-        <div class="siege" style="padding-left: 0em; padding-bottom: 0em;">
-            <h1 style="text-align: left">
-				<img src="zala_term.png" alt="Zala" style="display: inline-block; height: 1em; position: relative; bottom: 0.125em">
+        <div class="section-header">
+            <h1>
+				<img src="cube.png" alt="Rain">
+				Rain
+			</h1>
+        </div>
+
+        <div class="sub-header">
+			<h4>Isometric Squad Tactics Game</h4>
+			<ul>
+				<li> SDL2 2.5D isometric engine </li>
+				<li> pathfinding, fog of war, and tactical AI systems </li>
+				<li> dynamic user input handling </li>
+			</ul>
+			<a href="https://github.com/anchovieshat/rain" class="sub-link">Rain Github</a>
+		</div>
+
+		<p>Rain's rendering engine positions and draws 2D tiles to give it a 2.5D isometric feel. In order to support camera rotation, the engine selects pre-made tiles from
+		each tile type's palette. To simplify mouse detection while my grid placement and block size were still undetermined, I constructed a screenspace to worldspace map so that
+		mouse clicks would map perfectly onto pixels, regardless of orientation.</p>
+		<img src="click_buffer.png" class="thumbnail" alt="Mouse Click Detection" width="80%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+		<p>Rain uses a breadth-first search pathfinder to move the player characters around the map. The player can then select enemies to attack, assuming the player
+		characters can see them. To manage vision, each entity adds the surrounding circle of tiles into their team's visible tile list.</p>
+		<img src="rainue.gif" class="thumbnail" alt="Rain Menu" width="80%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+    </div>
+    </section>
+
+    <section id="zala">
+    <div class="container">
+        <div class="section-header">
+            <h1>
+				<img src="zala_term.png" alt="Zala">
 				Zala
 			</h1>
         </div>
 
-        <div style="background-color: #bcf6ea; padding: 1em">
+        <div class="sub-header">
 			<h4>Space Programming Game</h4>
-        <ul>
-            <li> 2D OpenGL rendering engine </li>
-            <li> 2D physics with timestepping </li>
-            <li> Real-time pseudo-CPU emulation </li>
-            <li> Assembler to bytecode to runtime toolchain</li>
-        </ul>
-		<a href="https://github.com/anchovieshat/zala" style="color: #5c968a;">Zala Github</a>
+			<ul>
+				<li> 2D OpenGL rendering engine </li>
+				<li> 2D physics with timestepping </li>
+				<li> Real-time pseudo-CPU emulation </li>
+				<li> Assembler to bytecode to runtime toolchain</li>
+			</ul>
+			<a href="https://github.com/anchovieshat/zala" class="sub-link">Zala Github</a>
 		</div>
-		<br>
+
         <p>Zala is a side-project that I developed over a period of time after wanting to see a solid space
         programming game similar to Mojang's 0x10c. Zala has an in-game console and assembler, using an emulated
 		CPU to process instructions. The player can open doors, fire turrets, and fly the ship with
@@ -384,34 +255,33 @@
     </div>
     </section>
 
-    <section id="snow" class="snow-section">
+    <section id="snow">
     <div class="container">
-        <div class="siege" style="padding-left: 0em; padding-bottom: 0em;">
-            <h1 style="text-align: left">
-				<img src="snow_cube.jpg" alt="Snow" style="display: inline-block; height: 1em; position: relative; bottom: 0.125em">
+        <div class="section-header">
+            <h1>
+				<img src="snow_cube.jpg" alt="Snow">
 				Snow
 			</h1>
         </div>
 
-        <div style="background-color: #bcf6ea; padding: 1em">
+        <div class="sub-header">
 			<h4>Voxel Terrain Engine</h4>
-        <ul>
-            <li> powerful 3D OpenGL voxel engine </li>
-            <li> instanced rendering </li>
-            <li> hulled terrain mesh to lighten GPU load </li>
-            <li> fast, efficient ambient occlusion </li>
-            <li> procedurally generated mountains and plains to explore </li>
-        </ul>
-		<a href="https://github.com/anchovieshat/snow" style="color: #5c968a;">Snow Github</a>
+			<ul>
+				<li> powerful 3D OpenGL voxel engine </li>
+				<li> instanced rendering </li>
+				<li> hulled terrain mesh to lighten GPU load </li>
+				<li> fast, efficient ambient occlusion </li>
+				<li> procedurally generated mountains and plains to explore </li>
+			</ul>
+			<a href="https://github.com/anchovieshat/snow" class="sub-link">Snow Github</a>
 		</div>
-		<br>
+
 		<p>Snow was an experiment into procedural terrain generation and 3D rendering using OpenGL. While learning to render tons of 3D models each frame, I picked
 		through several techniques, trying to get the smoothest framerate for the largest visible number of voxels. I tried using the CPU to create a mesh containing
 		only the visible faces of the terrain, but quickly discovered that doing that created a large amount of vertex processing on the component not designed to
 		handle it. I found that instanced rendering of full cubes moved the vast majority of processing to the gpu instead, and the only work the cpu had to do
 		was to compile a list of cube centers for the hulled mesh.</p>
         <img src="blocks.gif" class="thumbnail" alt="Terrain Huller" width="80%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
-		<img src="rle_map.png" class="thumbnail" alt="Large Map Test" width="80%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
 		<p>Using perlin noise, I rapidly generated interesting terrain for the player to explore. Interesting terrain gave me a strong reason to work
 		on the hull meshing. I wanted more to explore and see from a distance.</p>
 		<p>One of the biggest issues with voxels, especially non-textured voxels, is the need to differentiate between flat surfaces and edges. I wrote an edge detector
@@ -424,45 +294,6 @@
 		</div>
     </div>
     </section>
-
-    <section id="rain" class="rain-section">
-    <div class="container">
-        <div class="siege" style="padding-left: 0em; padding-bottom: 0em;">
-            <h1 style="text-align: left">
-				<img src="cube.png" alt="Rain" style="display: inline-block; height: 1em; position: relative; bottom: 0.125em">
-				Rain
-			</h1>
-        </div>
-
-        <div style="background-color: #bcf6ea; padding: 1em">
-			<h4>Isometric Squad Tactics Game</h4>
-        <ul>
-            <li> SDL2 2.5D isometric engine </li>
-            <li> pathfinding, fog of war, and tactical AI systems </li>
-            <li> dynamic user input handling </li>
-        </ul>
-		<a href="https://github.com/anchovieshat/rain" style="color: #606060;">Rain Github</a>
-		</div>
-		<br>
-		<p>Rain's rendering engine positions and draws 2D tiles to give it a 2.5D isometric feel. In order to support camera rotation, the engine selects pre-made tiles from
-		each tile type's palette. To simplify mouse detection while my grid placement and block size were still undetermined, I constructed a screenspace to worldspace map so that
-		mouse clicks would map perfectly onto pixels, regardless of orientation.</p>
-		<img src="click_buffer.png" class="thumbnail" alt="Mouse Click Detection" width="80%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
-		<p>Rain uses a breadth-first search pathfinder to move the player characters around the map. The player can then select enemies to attack, assuming the player
-		characters can see them. To manage vision, each entity adds the surrounding circle of tiles into their team's visible tile list.</p>
-        <img src="rainue.gif" class="thumbnail" alt="Rain Menu" width="80%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
-    </div>
-    </section>
-
-	<div class="container" style="margin-top: 4em; padding-top: 1.5em; background-color: #18bc9c">
-        <img src="person.jpg" class="thumbnail" width="30%" height="auto" style="display: block; float: right">
-        <div class="siege" style="float: left; width:60%; position: relative; bottom: 1.5em">
-			<h1 style="color: white;">Hire me!</h1>
-			<p style="color: white; text-align: left">If you think my projects are interesting, I may be a good fit for your company.
-			</p>
-			<a id="emaila2" style="color: white;"></a>
-		</div>
-	</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
