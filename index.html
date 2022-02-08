@@ -13,39 +13,23 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="ie10-viewport-bug-workaround.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
     <link href="scrolling-nav.css" rel="stylesheet">
     <link href="https://bootswatch.com/flatly/bootstrap.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
 
 	<script src="portfolio.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
   </head>
 
  <body id="page-top" data-target=".navbar-fixed-top" onload="fill_email()">
     <nav class="navbar navbar-inverse navbar-fixed-top top-nav-collapse">
-      <div class="container">
-        <div class="navbar-header page-scroll">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-          </button>
-          <a class="navbar-brand page-scroll" href="#">Pentaquine</a>
-        </div>
-        <div id="navbar" >
-          <ul class="nav navbar-nav">
-            <li class="hidden"><a href="#about">Home</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+		<div class="navbar-header page-scroll">
+		  <a class="navbar-brand page-scroll" href="#">Pentaquine</a>
+		</div>
     </nav>
 
     <section id="about" class="about-section">
@@ -60,12 +44,12 @@
 						&nbsp;Github Portfolio
 					</a>
 				</div>
-				<img src="person.jpg" alt="mugshot" class="thumbnail mugshot-img">
+				<img src="person.png" alt="mugshot" class="thumbnail mugshot-img">
 			</div>
 			<div class="skills-summary">
 				<h4 class="header">Skill Summary</h4>
 				<ul class="skills-list">
-					<li>production experience with C, Rust, Python, and JS</li>
+					<li>production experience with C, Rust, Python, Go, and JS</li>
 					<li>low-level embedded/networking with Linux kernel and userspace</li>
 				</ul>
 			</div>
@@ -74,8 +58,14 @@
 		<div class="link-block">
 			<h2 class="title">Spotlight Projects</h2>
 			<div class="link-row">
+				<a href="#snowfort">
+					<img class="pixel-img" src="snowfort.png" alt="Snowfort">Snowfort
+				</a>
 				<a href="#Q8">
 					<img src="tile.png" alt="Q8">Q8
+				</a>
+				<a href="#debug">
+					<img class="pixel-img" src="debug.png" alt="debug">Debug
 				</a>
 				<a href="#rust">
 					<img src="rust.png" alt="Rust">Rust
@@ -94,6 +84,40 @@
 				</a>
 			</div>
 		</div>
+    </section>
+
+
+    <section id="snowfort">
+    <div class="container">
+        <div class="section-header">
+            <h1>
+				<img class="pixel-img" src="snowfort.png" alt="Snowfort">Snowfort
+			</h1>
+        </div>
+
+        <div class="sub-header">
+			<h4>Enhanced IRC-like Server and Client</h4>
+			<ul>
+				<li> full user-permissions model </li>
+				<li> message history for channels and DMs </li>
+				<li> Easy UTF-8 and SSL support, right out of the box </li>
+			</ul>
+
+			<a href="https://github.com/colrdavidson/snowfort" class="sub-link">Snowfort Github</a>
+		</div>
+
+		<p>Snowfort is an experiment, designed to challenge the way interviews are done in the tech space.
+		Snowfort was built to handle client implementations at several different steps in the web stack,
+		testing candidate's abilities to write low-level network calls, or design a nice looking interface,
+		according to intended position. Each candidate is provided with an appropriate client
+		stub and RFC, they flesh it out and customize it, allowing them to flex their job-specific skills.</p>
+		<img src="snowfort_use.png" class="thumbnail" alt="Snowfort Example" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+		<p>After completion,
+		day-to-day engineering chat would be done via their own custom client, giving the tool and interview
+		task some purpose and meaning. On job day one, every new onboardee has a great icebreaker
+		showing off what they did with their client, and giving immediate traction to launch into internal
+		dev workflow improvements, getting to know the team better in the process.</p>	
+    </div>
     </section>
 
     <section id="Q8">
@@ -127,6 +151,36 @@
 		<p>Q8 provides only the most basic of operations, giving new users lots of runway to grow.
 		Need multiplication? Discover the joys of writing it yourself using addition and a loop,
 		and learn a lot about programming as you go.</p>
+    </div>
+    </section>
+
+    <section id="debug">
+    <div class="container">
+        <div class="section-header">
+            <h1>
+				<img class="pixel-img" src="debug.png" alt="Debug">Debug
+			</h1>
+        </div>
+
+        <div class="sub-header">
+			<h4>Linux Binary Debugger</h4>
+			<ul>
+				<li> context-aware variable watchpoints </li>
+				<li> fast program iteration times </li>
+				<li> AST-like code layout breakdowns </li>
+			</ul>
+
+			<a href="https://github.com/colrdavidson/debug" class="sub-link">Debug Github</a>
+		</div>
+
+		<p>Debug is a learning exercise to understand DWARF and ELF better that turned into a real
+		project. The intent of the project is to bring full-fat, quality GUI/TUI debugging, ala
+		RemedyBG to Linux, with integrations for high-detail profiling, system-level eBPF
+		latency measurements, and custom binary dissassembly integration for live network protocol
+		debugging.</p>
+		<img src="debug_use.png" class="thumbnail" alt="AST dump" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+		<p>Debug is currently a work in progress, with short-term upcoming features including
+		single-step mode, binary disassembly, struct member access, and a interactive TUI</p>
     </div>
     </section>
 
@@ -291,16 +345,6 @@
 		</div>
     </div>
     </section>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="ie10-viewport-bug-workaround.js"></script>
-    <script src="jquery.easing.min.js"></script>
-    <script src="scrolling-nav.js"></script>
 
   </body>
 	<footer style="margin-top: 4em; padding-bottom: 4em; background-color: #555">
