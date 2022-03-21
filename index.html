@@ -58,14 +58,14 @@
 		<div class="link-block">
 			<h2 class="title">Spotlight Projects</h2>
 			<div class="link-row">
+				<a href="#debug">
+					<img class="pixel-img" src="debug.png" alt="debug">Debug
+				</a>
 				<a href="#snowfort">
 					<img class="pixel-img" src="snowfort.png" alt="Snowfort">Snowfort
 				</a>
 				<a href="#Q8">
 					<img src="tile.png" alt="Q8">Q8
-				</a>
-				<a href="#debug">
-					<img class="pixel-img" src="debug.png" alt="debug">Debug
 				</a>
 				<a href="#rust">
 					<img src="rust.png" alt="Rust">Rust
@@ -86,6 +86,35 @@
 		</div>
     </section>
 
+    <section id="debug">
+    <div class="container">
+        <div class="section-header">
+            <h1>
+				<img class="pixel-img" src="debug.png" alt="Debug">Debug
+			</h1>
+        </div>
+
+        <div class="sub-header">
+			<h4>Linux x64 Binary Debugger</h4>
+			<ul>
+				<li> context-aware variable watchpoints </li>
+				<li> fast program iteration times </li>
+				<li> AST-like code layout breakdowns </li>
+			</ul>
+
+			<a href="https://github.com/colrdavidson/debug" class="sub-link">Debug Github</a>
+		</div>
+
+		<p>Debug is a learning exercise to understand DWARF and ELF better that turned into a real
+		project. The intent of the project is to bring full-fat, quality GUI/TUI debugging, ala
+		RemedyBG to Linux, with integrations for high-detail profiling, system-level eBPF
+		latency measurements, and custom binary dissassembly integration for live network protocol
+		debugging.</p>
+		<img src="debug_use.gif" class="thumbnail" alt="AST dump" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+		<p>Debug is currently a work in progress, with short-term upcoming features including
+		binary disassembly and support for simple C expressions</p>
+    </div>
+    </section>
 
     <section id="snowfort">
     <div class="container">
@@ -116,7 +145,7 @@
 		day-to-day engineering chat would be done via their own custom client, giving the tool and interview
 		task some purpose and meaning. On job day one, every new onboardee has a great icebreaker
 		showing off what they did with their client, and giving immediate traction to launch into internal
-		dev workflow improvements, getting to know the team better in the process.</p>	
+		dev workflow improvements, getting to know the team better in the process.</p>
     </div>
     </section>
 
@@ -154,35 +183,6 @@
     </div>
     </section>
 
-    <section id="debug">
-    <div class="container">
-        <div class="section-header">
-            <h1>
-				<img class="pixel-img" src="debug.png" alt="Debug">Debug
-			</h1>
-        </div>
-
-        <div class="sub-header">
-			<h4>Linux x64 Binary Debugger</h4>
-			<ul>
-				<li> context-aware variable watchpoints </li>
-				<li> fast program iteration times </li>
-				<li> AST-like code layout breakdowns </li>
-			</ul>
-
-			<a href="https://github.com/colrdavidson/debug" class="sub-link">Debug Github</a>
-		</div>
-
-		<p>Debug is a learning exercise to understand DWARF and ELF better that turned into a real
-		project. The intent of the project is to bring full-fat, quality GUI/TUI debugging, ala
-		RemedyBG to Linux, with integrations for high-detail profiling, system-level eBPF
-		latency measurements, and custom binary dissassembly integration for live network protocol
-		debugging.</p>
-		<img src="debug_use.gif" class="thumbnail" alt="AST dump" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
-		<p>Debug is currently a work in progress, with short-term upcoming features including
-		binary disassembly and support for simple C expression</p>
-    </div>
-    </section>
 
 	<section id="rust">
 		<div class="container">
