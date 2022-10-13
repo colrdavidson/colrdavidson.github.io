@@ -58,6 +58,9 @@
 		<div class="link-block">
 			<h2 class="title">Spotlight Projects</h2>
 			<div class="link-row">
+				<a href="#spall">
+					<img class="pixel-img" src="spall.png" alt="spall">Spall
+				</a>
 				<a href="#debug">
 					<img class="pixel-img" src="debug.png" alt="debug">Debug
 				</a>
@@ -84,6 +87,37 @@
 				</a>
 			</div>
 		</div>
+    </section>
+
+    <section id="spall">
+    <div class="container">
+        <div class="section-header">
+            <h1>
+				<img class="pixel-img" src="spall.png" alt="spall">Spall
+			</h1>
+        </div>
+
+        <div class="sub-header">
+			<h4>Fast, Simple, Easy Profiling</h4>
+			<ul>
+				<li> full 165+ fps zoom and pan with millions of events </li>
+				<li> incredibly zippy file loadtimes </li>
+				<li> web frontend to ease new users into profiling </li>
+			</ul>
+
+			<a href="https://github.com/colrdavidson/spall" class="sub-link">Spall Github</a>
+		</div>
+
+		<p>Spall is an easy-to-learn chrome://tracing replacement. It supports the older JSON format, 
+		and a new custom binary format to squash the learning curve for existing profiler users,
+		providing a transition path to a faster alternative when they're ready to integrate with the spall library directly.
+		Spall's binary format allows much lower event capture overhead, and loads much faster into the tracing frontend. 
+		Spall is capable of loading very large JSON and binary files, ingesting about 500 MB of JSON in 10 seconds, 
+		dropping down to 1-2 seconds for the same file in binary form</p>
+		<img src="spall.gif" class="thumbnail" alt="Spall Use" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+		<p>Next steps for spall include a native version, enabling loads of much bigger trace files, faster,
+		live data streaming to the profiler, and more in-depth, complex stats.</p>
+    </div>
     </section>
 
     <section id="debug">
