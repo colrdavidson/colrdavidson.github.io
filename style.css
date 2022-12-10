@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 section:not(.about-section) {
-	padding-top: 4em;
+	padding-top: 2em;
 }
 
 .about-section {
@@ -131,6 +131,7 @@ section:not(.about-section) {
 	text-align: left;
 	clear: both;
 	margin-bottom: 0;
+	padding-left: 1.5em;
 }
 
 .octocat-link {
