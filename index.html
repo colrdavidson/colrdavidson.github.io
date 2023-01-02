@@ -5,30 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>Pentaquine</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <title>Portfolio - Colin Davidson</title>
 
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
-    <link href="scrolling-nav.css" rel="stylesheet">
-    <link href="https://bootswatch.com/flatly/bootstrap.min.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
 
-	<script src="portfolio.js"></script>
+	<script>
+		function fill_email() {
+			var addr = "Y29scmRhdmlkc29uQGdtYWlsLmNvbQ==";
+
+			let slots = ["emaila", "emaila2"];
+			for (let i = 0; i < slots.length; i++) {
+				document.getElementById(slots[i]).innerHTML = atob(addr);
+				document.getElementById(slots[i]).href = "mailto:" + atob(addr);
+			}
+		}
+	</script>
 
   </head>
 
- <body id="page-top" data-target=".navbar-fixed-top" onload="fill_email()">
-    <nav class="navbar navbar-inverse navbar-fixed-top top-nav-collapse">
-		<div class="navbar-header page-scroll">
-		  <a class="navbar-brand page-scroll" href="#">Pentaquine</a>
+ <body id="page-top" onload="fill_email()">
+    <nav class="navbar">
+		<div class="navbar-header">
+		  <a class="navbar-logo" href="#">Pentaquine</a>
 		</div>
     </nav>
 
@@ -39,12 +42,13 @@
 					<h2>Colin Davidson</h2>
 					<h3>Embedded/Systems Software Engineer</h3>
 					<a id="emaila"></a>
-					<a href="https://github.com/colrdavidson">
+					<a class="img-row" href="https://github.com/colrdavidson">
 						<img src="octocat.png" alt="github-link" class="octocat-link">
 						&nbsp;Github Portfolio
 					</a>
 					<a href="resume.pdf">Resume</a>
 				</div>
+				<img src="mug2.png"></img>
 			</div>
 			<div class="skills-summary">
 				<h4 class="header">Skill Summary</h4>
@@ -89,9 +93,8 @@
     <section id="spall">
     <div class="container">
         <div class="section-header">
-            <h1>
-				<img class="pixel-img" src="spall.png" alt="spall">Spall
-			</h1>
+			<img class="pixel-img" src="spall.png" alt="spall">
+            <h1>Spall</h1>
         </div>
 
         <div class="sub-header">
@@ -121,9 +124,8 @@
     <section id="debug">
     <div class="container">
         <div class="section-header">
-            <h1>
-				<img class="pixel-img" src="debug.png" alt="Debug">Debug
-			</h1>
+			<img class="pixel-img" src="debug.png" alt="Debug">
+            <h1>Debug</h1>
         </div>
 
         <div class="sub-header">
@@ -151,9 +153,8 @@
     <section id="snowfort">
     <div class="container">
         <div class="section-header">
-            <h1>
-				<img class="pixel-img" src="snowfort.png" alt="Snowfort">Snowfort
-			</h1>
+			<img class="pixel-img" src="snowfort.png" alt="Snowfort">
+            <h1>Snowfort</h1>
         </div>
 
         <div class="sub-header">
@@ -184,9 +185,8 @@
     <section id="Q8">
     <div class="container">
         <div class="section-header">
-            <h1>
-				<img src="tile.png" alt="Quine8">Quine8 (Q8)
-			</h1>
+			<img src="tile.png" alt="Quine8">
+            <h1>Quine8 (Q8)</h1>
         </div>
 
         <div class="sub-header">
@@ -218,9 +218,8 @@
 	<section id="kern">
 	<div class="container">
 		<div class="section-header">
-			<h1>
-				<img src="nolli.png" alt="Nolli">Nolli
-			</h1>
+			<img src="nolli.png" alt="Nolli">
+			<h1>Nolli</h1>
 		</div>
 		<div class="sub-header">
 			<h4>Hobby Kernel</h4>
@@ -250,9 +249,8 @@
     <section id="rain">
     <div class="container">
         <div class="section-header">
-            <h1>
-				<img src="cube.png" alt="Rain">Rain
-			</h1>
+			<img src="cube.png" alt="Rain">
+            <h1>Rain</h1>
         </div>
 
         <div class="sub-header">
@@ -278,9 +276,8 @@
     <section id="zala">
     <div class="container">
         <div class="section-header">
-            <h1>
-				<img src="zala_term.png" alt="Zala">Zala
-			</h1>
+			<img src="zala_term.png" alt="Zala">
+            <h1>Zala</h1>
         </div>
 
         <div class="sub-header">
@@ -311,9 +308,8 @@
     <section id="snow">
     <div class="container">
         <div class="section-header">
-            <h1>
-				<img src="snow_cube.jpg" alt="Snow">Snow
-			</h1>
+			<img src="snow_cube.jpg" alt="Snow">
+            <h1>Snow</h1>
         </div>
 
         <div class="sub-header">
@@ -347,7 +343,17 @@
     </div>
     </section>
 
-  </body>
-	<footer style="margin-top: 4em; padding-bottom: 4em; background-color: #555">
-	</footer>
+	<section>
+		<div class="hire-card">
+			<div class="text-column">
+				<h1>Hire Me!</h1>
+				<p>If you think my projects are interesting, I may be a good fit for your company.</p>
+				<a id="emaila2"></a>
+			</div>
+			<img src="mug2.png"></img>
+		</div>
+	</section>
+
+	</body>
+	<footer></footer>
 </html>

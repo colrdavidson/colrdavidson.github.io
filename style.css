@@ -1,9 +1,43 @@
-body {
-    padding-top: 50px;
+:root {
+	--link-color: #0083B7;
+	--nav-color: #222;
 }
 
-h1, h2, h3, h4, h5, p {
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-size: 12pt;
+	line-height: 1.4;
+	color: #333;
 	font-family: 'Fira Sans', sans-serif;
+}
+
+footer {
+	margin-top: 2em;
+	padding-bottom: 4em;
+	background-color: var(--nav-color);
+}
+
+a {
+	font-weight: 500;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: 500;
+	line-height: 1.1;
+	margin-top: 0;
+}
+
+h4 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+ul {
+	margin-top: 0;
 }
 
 .image {
@@ -24,57 +58,76 @@ h1, h2, h3, h4, h5, p {
 	height: 50%;
 }
 
+a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
 .mugshot-header {
 	display: flex;
 	flex-direction: column;
-	max-width: 20em;
+	align-items: center;
+	max-width: 15em;
 
     text-align: center;
 }
 
-.mugshot-img {
-	filter: brightness(1.25);
+.mugshot-header > h2 {
+	font-size: 20pt;
+	margin-bottom: 0.5em;
 }
 
 .mugshot-header > h3 {
-	margin-top: 0.25em;
+	font-size: 16pt;
 	margin-bottom: 0.25em;
 }
 
 .mugshot-header > a {
-	color: wheat;
+	color: var(--link-color);
 }
 
+section {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+section.about-section {
+	margin-bottom: 2em;
+}
 section:not(.about-section) {
-	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 .about-section {
     padding-top: 1em;
-    padding-bottom: 1em;
     text-align: center;
-    background: #555;
-	color: whitesmoke;
+    background: #eee;
 }
+
 
 .section-header {
-    text-align: center;
-	padding-left: 0em;
-	padding-bottom: 0em;
-}
-
-.section-header > h1 {
-	text-align: left;
-	margin: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	margin-bottom: 0.25em;
 }
 
-.section-header > h1 > img {
+.section-header > h1 {
+	font-size: 24pt;
+	margin: 0;
+}
+
+.section-header > img {
 	display: inline-block;
-	height: 1em;
-	position: relative;
-	bottom: 0.125em;
 	margin-right: 0.25em;
+	max-height: 24pt;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 50em;
 }
 
 .container > .sub-link {
@@ -108,11 +161,13 @@ section:not(.about-section) {
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 1em;
+	gap: 1em;
 }
 
-.mugshot-box > .mugshot-img {
-	height: 15em;
-	margin-bottom: 0em;
+.mugshot-box > img {
+	border-radius: 4px;
+	border: 6px solid #ddd;
+	height: 16em;
 }
 
 .skills-summary {
@@ -120,6 +175,7 @@ section:not(.about-section) {
 	border-bottom: solid 1px #999;
 	padding-top: 1em;
 	padding-bottom: 1em;
+	margin-bottom: 1em;
 }
 
 .skills-summary > .header {
@@ -139,11 +195,7 @@ section:not(.about-section) {
 }
 
 .link-block {
-	background-color: #757575;
-
-	margin-top: 1em;
 	padding-bottom: 1em;
-	padding-top: 1em;
 
 	display: flex;
 	flex-direction: column;
@@ -165,7 +217,7 @@ section:not(.about-section) {
 .link-row > a {
 	display: flex;
 	flex-direction: column;
-	color: wheat;
+	color: var(--link-color);
 }
 
 .link-row > a > img {
@@ -174,18 +226,71 @@ section:not(.about-section) {
 }
 
 .navbar {
-	height: 2em;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background: var(--nav-color);
+	height: 3em;
 }
 
 .navbar-header {
 	width: 100%;
+	padding-left: 1em;
+	padding-right: 1em;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 60em;
+}
 
-	float: none !important;
+.navbar-logo {
+	font-size: 18px;
+	color: #9d9d9d;
 }
 
 .pixel-img {
 	image-rendering: pixelated;
+}
+
+.hire-card {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	background-color: #18bc9c;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 33em;
+	padding: 1.5em;
+
+	border-radius: 6px;
+}
+
+.text-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	max-width: 20em;
+}
+
+.hire-card > img {
+	border-radius: 4px;
+	border: 6px solid #ddd;
+	height: 12em;
+}
+
+.text-column > h1 {
+	color: white;
+	margin-bottom: 0;
+	font-size: 22pt;
+}
+.text-column > p {
+	color: white;
+	margin-bottom: 0.25em;
+}
+.text-column > a {
+	color: white;
+	margin-bottom: 0;
 }
