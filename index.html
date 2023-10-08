@@ -100,24 +100,26 @@
         <div class="sub-header">
 			<h4>Fast, Simple, Easy Profiling</h4>
 			<ul>
-				<li> full 165+ fps zoom and pan with millions of events </li>
+				<li> full 165+ fps zoom and pan with billions of events </li>
 				<li> incredibly zippy file loadtimes </li>
-				<li> web frontend to ease new users into profiling </li>
+				<li> both web and native support </li>
 			</ul>
 
-			<a href="https://gravitymoth.com/spall" class="sub-link">Spall Live</a>
-			<a href="https://github.com/colrdavidson/spall" class="sub-link">Spall Github</a>
+			<a href="https://gravitymoth.com/spall" class="sub-link">Play with Spall-Web</a>
+			<a href="https://github.com/colrdavidson/spall" class="sub-link">Spall-Web on Github</a>
+			<a href="https://gravitymoth.itch.io/spall" class="sub-link">Buy Spall Native</a>
 		</div>
 
-		<p>Spall is an easy-to-learn chrome://tracing replacement. It supports the older JSON format, 
-		and a new custom binary format to squash the learning curve for existing profiler users,
-		providing a transition path to a faster alternative when they're ready to integrate with the spall library directly.
-		Spall's binary format allows much lower event capture overhead, and loads much faster into the tracing frontend. 
-		Spall is capable of loading very large JSON and binary files, ingesting about 500 MB of JSON in 10 seconds, 
-		dropping down to 1-2 seconds for the same file in binary form</p>
-		<img src="spall.gif" class="thumbnail" alt="Spall Use" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
-		<p>Next steps for spall include a native version, enabling loads of much bigger trace files, faster,
-		live data streaming to the profiler, and more in-depth, complex stats.</p>
+		<p>Spall is an easy-to-learn tracing profiler. It supports the chrome://tracing JSON format, 
+		to ease the learning curve for existing profiler users, along with a custom binary format for faster,
+		more compact and accurate traces, when users are ready to integrate the spall tracing library directly.
+		Spall loads very large JSON and binary files, ingesting about 4 million events (500 MB) of JSON in 4 seconds, 
+		or half a second for the same file in the binary format.</p>
+		<div class="video-wrapper">
+			<video autoplay loop muted playsinline>
+				<source src="../spall.mp4" type="video/mp4">
+			</video>
+		</div>
     </div>
     </section>
 
